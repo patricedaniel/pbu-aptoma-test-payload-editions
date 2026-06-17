@@ -23,6 +23,7 @@ config/
   pem.env                          ← local key (gitignored)
 payloads/                          ← working payloads for pem-push.sh
   edition-shared-pages.json        ← bulk sharing example
+  files/                           ← ad PDF + preview (GitHub raw URLs in JSON)
 stuff/
   README.md                        ← documentation index
   print-edition-manager-api.md     ← PEM: endpoints, create/update, responses
@@ -105,12 +106,16 @@ Script behavior:
 
 Put new working payloads in `payloads/`. Reference examples remain under `stuff/Interface to Ad and Page Planning Tool/muster-*.json`.
 
+Test ad assets live in `payloads/files/` (`ad-green.pdf`, `ad-green-preview.png`). Payloads must use publicly reachable HTTPS URLs for `pdfUrl`/`previewUrl`; `"ready": true` requires both.
+
+**Auth header:** `Authorization: apikey <key>` — not `Bearer`.
+
 **Raw curl** (equivalent):
 
 ```bash
 curl -X POST "https://print-edition-manager.aptoma.no/edition?dryRun=true" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer <API_KEY>" \
+  -H "Authorization: apikey <API_KEY>" \
   -d @payloads/my-edition.json
 ```
 

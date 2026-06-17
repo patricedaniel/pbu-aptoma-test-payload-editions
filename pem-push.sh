@@ -140,7 +140,7 @@ http_code="$(
   curl -sS -w "%{http_code}" -o "$response_file" \
     -X POST "$url" \
     -H "Content-Type: application/json" \
-    -H "Authorization: Bearer ${APTOM_PEM_API_KEY}" \
+    -H "Authorization: apikey ${APTOM_PEM_API_KEY}" \
     --data-binary "@${payload_file}"
 )"
 

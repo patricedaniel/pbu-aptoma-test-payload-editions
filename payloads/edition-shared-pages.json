@@ -110,19 +110,7 @@
       {
         "id": "page-001",
         "template": "Standard Seite",
-        "objects": {
-          "ads": [
-            {
-              "id": "ad-leo-p1",
-              "title": "Leopoldstadt Titelseite Anzeige",
-              "pdfUrl": "https://ads.example.com/leo-p1.pdf",
-              "ready": true,
-              "placement": { "x": 10, "y": 20, "width": 90, "height": 130 }
-            }
-          ],
-          "pdfs": [],
-          "placeholders": []
-        }
+        "objects": { "ads": [], "pdfs": [], "placeholders": [] }
       },
       { "id": "page-002", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
       { "id": "page-003", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
@@ -132,9 +120,10 @@
         "objects": {
           "ads": [
             {
-              "id": "ad-leo-p4",
-              "title": "Leopoldstadt Lokal Anzeige",
-              "pdfUrl": "https://ads.example.com/leo-p4.pdf",
+              "id": "ad-leo-p4-green",
+              "title": "Testanzeige (grüner Hintergrund)",
+              "pdfUrl": "https://raw.githubusercontent.com/patricedaniel/pbu-aptoma-test-payload-editions/main/payloads/files/ad-green.pdf",
+              "previewUrl": "https://raw.githubusercontent.com/patricedaniel/pbu-aptoma-test-payload-editions/main/payloads/files/ad-green-preview.png",
               "ready": true,
               "placement": { "x": 10, "y": 20, "width": 90, "height": 60 }
             }
@@ -147,17 +136,15 @@
         "id": "page-005",
         "template": "Standard Seite",
         "objects": {
-          "ads": [
-            {
-              "id": "ad-leo-p5",
-              "title": "Leopoldstadt Lokal Anzeige 2",
-              "pdfUrl": "https://ads.example.com/leo-p5.pdf",
-              "ready": true,
-              "placement": { "x": 10, "y": 20, "width": 90, "height": 60 }
-            }
-          ],
+          "ads": [],
           "pdfs": [],
-          "placeholders": []
+          "placeholders": [
+            {
+              "id": "placeholder-leo-p5",
+              "title": "Reservierter Platz",
+              "placement": { "x": 10, "y": 90, "width": 90, "height": 60 }
+            }
+          ]
         }
       },
       { "id": "page-006", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
@@ -181,59 +168,11 @@
       "defaultTemplate": "Standard Seite"
     },
     "pages": [
-      {
-        "id": "page-001",
-        "template": "Standard Seite",
-        "objects": {
-          "ads": [
-            {
-              "id": "ad-mh-p1",
-              "title": "Mariahilf Titelseite Anzeige",
-              "pdfUrl": "https://ads.example.com/mh-p1.pdf",
-              "ready": true,
-              "placement": { "x": 10, "y": 20, "width": 90, "height": 130 }
-            }
-          ],
-          "pdfs": [],
-          "placeholders": []
-        }
-      },
+      { "id": "page-001", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
       { "id": "page-002", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
       { "id": "page-003", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      {
-        "id": "page-004",
-        "template": "Standard Seite",
-        "objects": {
-          "ads": [
-            {
-              "id": "ad-mh-p4",
-              "title": "Mariahilf Lokal Anzeige",
-              "pdfUrl": "https://ads.example.com/mh-p4.pdf",
-              "ready": true,
-              "placement": { "x": 10, "y": 20, "width": 90, "height": 60 }
-            }
-          ],
-          "pdfs": [],
-          "placeholders": []
-        }
-      },
-      {
-        "id": "page-005",
-        "template": "Standard Seite",
-        "objects": {
-          "ads": [
-            {
-              "id": "ad-mh-p5",
-              "title": "Mariahilf Lokal Anzeige 2",
-              "pdfUrl": "https://ads.example.com/mh-p5.pdf",
-              "ready": true,
-              "placement": { "x": 10, "y": 20, "width": 90, "height": 60 }
-            }
-          ],
-          "pdfs": [],
-          "placeholders": []
-        }
-      },
+      { "id": "page-004", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-005", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
       { "id": "page-006", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
       { "id": "page-007", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
       { "id": "page-008", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },

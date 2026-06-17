@@ -61,10 +61,22 @@ Exit code `0` on HTTP 2xx; non-zero on errors (including **409** if another impo
 | `config/pem.env.sample` | Committed template for API key |
 | `config/pem.env` | Your local key (**gitignored**) |
 | `payloads/` | Working JSON payloads for `./pem-push.sh` |
+| `payloads/files/` | Hosted ad PDF/preview assets (referenced by `pdfUrl` / `previewUrl`) |
 | `stuff/` | Reference docs and copy-paste examples (gitignored in this repo) |
 | `AGENTS.md` | Instructions for AI/code agents |
 
 Copy additional examples from `stuff/Interface to Ad and Page Planning Tool/muster-*.json` into `payloads/` when you need them locally.
+
+### Ad assets (`payloads/files/`)
+
+`edition-shared-pages.json` references one test ad on Leopoldstadt page 4:
+
+- `payloads/files/ad-green.pdf` — solid green A4 PDF
+- `payloads/files/ad-green-preview.png` — matching preview image
+
+URLs in the payload use GitHub raw links (`patricedaniel/pbu-aptoma-test-payload-editions`). **PEM must fetch `pdfUrl` and `previewUrl` over HTTPS** — push the repo (public) before dry-run/live import, or Aptoma cannot download the files.
+
+Ads with `"ready": true` require both `pdfUrl` and `previewUrl`.
 
 ## What PEM does
 

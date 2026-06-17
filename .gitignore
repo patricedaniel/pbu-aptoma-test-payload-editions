@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Local PEM credentials (copy from config/pem.env.sample)
+config/pem.env
+
+stuff

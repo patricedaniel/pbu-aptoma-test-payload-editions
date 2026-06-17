@@ -1,7 +1,7 @@
 [
   {
     "name": "third-party-planner",
-    "productName": "Wiener Bezirksblatt",
+    "productName": "wiener-bezirksblatt",
     "editionName": "26-26 Wienweit",
     "editionTitle": "26-26 Wienweit",
     "publishDate": "2026-06-26",
@@ -10,92 +10,102 @@
       "pdfItemSchemaName": "print-pdf-item",
       "allowPageDelete": false,
       "allowTemplateUpdate": true,
-      "defaultTemplate": "Standard Seite"
+      "defaultTemplate": "Leer"
     },
     "pages": [
       {
         "id": "page-001",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": { "ads": [], "pdfs": [], "placeholders": [] }
       },
       {
         "id": "page-002",
-        "template": "Standard Seite",
-        "objects": { "ads": [], "pdfs": [], "placeholders": [] },
+        "template": "Leer",
+        "objects": {
+          "ads": [],
+          "pdfs": [],
+          "placeholders": [
+            {
+              "id": "placeholder-ww-p2",
+              "title": "Anzeigenplatz Seite 2",
+              "placement": { "x": 102.5, "y": 151, "width": 97.5, "height": 119 }
+            }
+          ]
+        },
         "sharing": [
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 2 } },
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Mariahilf", "page": 2 } }
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 2 } },
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Mariahilf", "page": 2 } }
         ]
       },
       {
         "id": "page-003",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": { "ads": [], "pdfs": [], "placeholders": [] },
         "sharing": [
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 3 } },
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Mariahilf", "page": 3 } }
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 3 } },
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Mariahilf", "page": 3 } }
         ]
       },
       {
         "id": "page-004",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": { "ads": [], "pdfs": [], "placeholders": [] }
       },
       {
         "id": "page-005",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": { "ads": [], "pdfs": [], "placeholders": [] }
       },
       {
         "id": "page-006",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": { "ads": [], "pdfs": [], "placeholders": [] },
         "sharing": [
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 6 } },
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Mariahilf", "page": 6 } }
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 6 } },
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Mariahilf", "page": 6 } }
         ]
       },
       {
         "id": "page-007",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": { "ads": [], "pdfs": [], "placeholders": [] },
         "sharing": [
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 7 } },
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Mariahilf", "page": 7 } }
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 7 } },
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Mariahilf", "page": 7 } }
         ]
       },
       {
         "id": "page-008",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": { "ads": [], "pdfs": [], "placeholders": [] },
         "sharing": [
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 8 } },
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Mariahilf", "page": 8 } }
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 8 } },
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Mariahilf", "page": 8 } }
         ]
       },
       {
         "id": "page-009",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": { "ads": [], "pdfs": [], "placeholders": [] },
         "sharing": [
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 9 } },
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Mariahilf", "page": 9 } }
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 9 } },
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Mariahilf", "page": 9 } }
         ]
       },
       {
         "id": "page-010",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": { "ads": [], "pdfs": [], "placeholders": [] },
         "sharing": [
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 10 } },
-          { "target": { "product": "Wiener Bezirksblatt", "edition": "26-26 Mariahilf", "page": 10 } }
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Leopoldstadt", "page": 10 } },
+          { "target": { "product": "wiener-bezirksblatt", "edition": "26-26 Mariahilf", "page": 10 } }
         ]
       }
     ]
   },
   {
     "name": "third-party-planner",
-    "productName": "Wiener Bezirksblatt",
+    "productName": "wiener-bezirksblatt",
     "editionName": "26-26 Leopoldstadt",
     "editionTitle": "26-26 Leopoldstadt",
     "publishDate": "2026-06-26",
@@ -104,26 +114,26 @@
       "pdfItemSchemaName": "print-pdf-item",
       "allowPageDelete": false,
       "allowTemplateUpdate": true,
-      "defaultTemplate": "Standard Seite"
+      "defaultTemplate": "Leer"
     },
     "pages": [
       {
         "id": "page-001",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": { "ads": [], "pdfs": [], "placeholders": [] }
       },
-      { "id": "page-002", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-003", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-002", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-003", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
       {
         "id": "page-004",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": {
           "ads": [
             {
               "id": "ad-leo-p4-green",
               "title": "Testanzeige (grüner Hintergrund)",
-              "pdfUrl": "https://raw.githubusercontent.com/patricedaniel/pbu-aptoma-test-payload-editions/main/payloads/files/ad-green.pdf",
-              "previewUrl": "https://raw.githubusercontent.com/patricedaniel/pbu-aptoma-test-payload-editions/main/payloads/files/ad-green-preview.png",
+              "pdfUrl": "https://raw.githubusercontent.com/patricedaniel/pbu-aptoma-test-payload-editions/53e5ccc0217f01f17d8e0f2fd415fe4c5ef4ca12/payloads/files/ad-green.pdf",
+              "previewUrl": "https://raw.githubusercontent.com/patricedaniel/pbu-aptoma-test-payload-editions/53e5ccc0217f01f17d8e0f2fd415fe4c5ef4ca12/payloads/files/ad-green-preview.png",
               "ready": true,
               "placement": { "x": 10, "y": 20, "width": 90, "height": 60 }
             }
@@ -134,7 +144,7 @@
       },
       {
         "id": "page-005",
-        "template": "Standard Seite",
+        "template": "Leer",
         "objects": {
           "ads": [],
           "pdfs": [],
@@ -147,16 +157,16 @@
           ]
         }
       },
-      { "id": "page-006", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-007", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-008", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-009", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-010", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } }
+      { "id": "page-006", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-007", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-008", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-009", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-010", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } }
     ]
   },
   {
     "name": "third-party-planner",
-    "productName": "Wiener Bezirksblatt",
+    "productName": "wiener-bezirksblatt",
     "editionName": "26-26 Mariahilf",
     "editionTitle": "26-26 Mariahilf",
     "publishDate": "2026-06-26",
@@ -165,19 +175,19 @@
       "pdfItemSchemaName": "print-pdf-item",
       "allowPageDelete": false,
       "allowTemplateUpdate": true,
-      "defaultTemplate": "Standard Seite"
+      "defaultTemplate": "Leer"
     },
     "pages": [
-      { "id": "page-001", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-002", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-003", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-004", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-005", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-006", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-007", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-008", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-009", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
-      { "id": "page-010", "template": "Standard Seite", "objects": { "ads": [], "pdfs": [], "placeholders": [] } }
+      { "id": "page-001", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-002", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-003", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-004", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-005", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-006", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-007", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-008", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-009", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } },
+      { "id": "page-010", "template": "Leer", "objects": { "ads": [], "pdfs": [], "placeholders": [] } }
     ]
   }
 ]

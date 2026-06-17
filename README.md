@@ -74,7 +74,7 @@ Copy additional examples from `stuff/Interface to Ad and Page Planning Tool/must
 - `payloads/files/ad-green.pdf` — solid green A4 PDF
 - `payloads/files/ad-green-preview.png` — matching preview image
 
-URLs in the payload use GitHub raw links (`patricedaniel/pbu-aptoma-test-payload-editions`). **PEM must fetch `pdfUrl` and `previewUrl` over HTTPS** — push the repo (public) before dry-run/live import, or Aptoma cannot download the files.
+URLs in the payload are pinned to a GitHub raw commit (`53e5ccc…`) so PEM always fetches the same file revision. **PEM must reach `pdfUrl` and `previewUrl` over HTTPS** — the repo must be public (or URLs otherwise reachable).
 
 Ads with `"ready": true` require both `pdfUrl` and `previewUrl`.
 

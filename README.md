@@ -62,7 +62,6 @@ Exit code `0` on HTTP 2xx; non-zero on errors (including **409** if another impo
 | `config/pem.env` | Your local key (**gitignored**) |
 | `payloads/` | Working JSON payloads for `./pem-push.sh` |
 | `payloads/files/` | Hosted ad PDF/preview assets (referenced by `pdfUrl` / `previewUrl`) |
-| `stuff/` | Reference docs and copy-paste examples (gitignored in this repo) |
 | `AGENTS.md` | Instructions for AI/code agents |
 
 Copy additional examples from `stuff/Interface to Ad and Page Planning Tool/muster-*.json` into `payloads/` when you need them locally.

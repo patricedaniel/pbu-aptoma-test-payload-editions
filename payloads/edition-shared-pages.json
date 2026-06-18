@@ -26,6 +26,11 @@
           "pdfs": [],
           "placeholders": [
             {
+              "id": "placeholder-ww-p2-top",
+              "title": "Anzeigenplatz Seite 2 (oben)",
+              "placement": { "x": 102.5, "y": 23.989, "width": 97.5, "height": 119 }
+            },
+            {
               "id": "placeholder-ww-p2",
               "title": "Anzeigenplatz Seite 2",
               "placement": { "x": 102.5, "y": 151, "width": 97.5, "height": 119 }

@@ -27,7 +27,7 @@
           "placeholders": [
             {
               "id": "placeholder-ww-p2-top",
-              "title": "Anzeigenplatz Seite 2 (oben)",
+              "title": "Platzhalter Seite 2 oben",
               "placement": { "x": 102.5, "y": 23.989, "width": 97.5, "height": 119 }
             },
             {

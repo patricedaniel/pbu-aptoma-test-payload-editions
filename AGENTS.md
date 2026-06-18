@@ -52,7 +52,7 @@ stuff/
 1. **Declarative sync** — payload describes target state; PEM diffs against DrEdition.
 2. **Stable IDs** — reuse `page.id`, `ad.id`, `placeholder.id` from the planning system across imports.
 3. **Print page schema** — DrEdition print page content schema needs `sourceId` (string) for page tracking.
-4. **Dry run first** — `POST .../edition?dryRun=true`, then `dryRun=false`.
+4. **Every POST applies** — PEM has no documented validate-only mode; use a test `editionName` when experimenting.
 5. **One import per edition** — parallel imports return `409`; queue per edition.
 6. **Response** — `traceId` + `logs` only; no structured placement JSON for back-sync.
 7. **Units** — `placement.x/y/width/height` in **mm**; origin at **top-left of margin (Satzspiegel)**.
@@ -84,21 +84,16 @@ stuff/
 
 ## Testing payloads
 
-**Preferred:** use `./pem-push.sh` (reads `config/pem.env`, defaults to dry-run).
+**Preferred:** use `./pem-push.sh` (reads `config/pem.env`).
 
 ```bash
 cp config/pem.env.sample config/pem.env   # once; set APTOM_PEM_API_KEY
 
-# Dry-run (default)
 ./pem-push.sh payloads/edition-shared-pages.json
-
-# Live import
-./pem-push.sh --live payloads/edition-shared-pages.json
 ```
 
 Script behavior:
 
-- `--dry-run` (default) → `?dryRun=true`; `--live` → `?dryRun=false`
 - `--auto` (default): JSON object → `POST /edition`, JSON array → `POST /editions`
 - Override with `--edition` or `--editions`
 - Exit `1` on non-2xx HTTP (note **409** = parallel import for same edition)
@@ -113,7 +108,7 @@ Test ad assets live in `payloads/files/` (`ad-green.pdf`, `ad-green-preview.png`
 **Raw curl** (equivalent):
 
 ```bash
-curl -X POST "https://print-edition-manager.aptoma.no/edition?dryRun=true" \
+curl -X POST "https://print-edition-manager.aptoma.no/edition" \
   -H "Content-Type: application/json" \
   -H "Authorization: apikey <API_KEY>" \
   -d @payloads/my-edition.json

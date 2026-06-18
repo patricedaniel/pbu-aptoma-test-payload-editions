@@ -15,8 +15,6 @@ operation: POST with the same editionName updates the edition.
 
 Options:
   -c, --config FILE   Config file (default: config/pem.env)
-  --dry-run           Validate only (default)
-  --live              Apply changes (dryRun=false)
   --edition           Force POST /edition (single object)
   --editions          Force POST /editions (array of editions, sharing)
   --auto              Pick /edition vs /editions from JSON root (default)
@@ -24,8 +22,7 @@ Options:
 
 Examples:
   ./pem-push.sh payloads/edition-shared-pages.json
-  ./pem-push.sh --live payloads/my-edition.json
-  ./pem-push.sh --editions --dry-run payloads/edition-shared-pages.json
+  ./pem-push.sh --editions payloads/edition-shared-pages.json
 
 Config: copy config/pem.env.sample to config/pem.env and set APTOM_PEM_API_KEY.
 EOF
@@ -65,7 +62,6 @@ detect_endpoint_mode() {
 }
 
 config_file="$DEFAULT_CONFIG"
-dry_run="true"
 endpoint_mode="auto"
 payload_file=""
 
@@ -75,14 +71,6 @@ while [[ $# -gt 0 ]]; do
       [[ $# -ge 2 ]] || die "missing value for $1"
       config_file="$2"
       shift 2
-      ;;
-    --dry-run)
-      dry_run="true"
-      shift
-      ;;
-    --live)
-      dry_run="false"
-      shift
       ;;
     --edition)
       endpoint_mode="edition"
@@ -130,7 +118,7 @@ case "$endpoint_mode" in
   *) die "internal error: invalid endpoint mode: $endpoint_mode" ;;
 esac
 
-url="${PEM_BASE_URL%/}${path}?dryRun=${dry_run}"
+url="${PEM_BASE_URL%/}${path}"
 
 echo "pem-push: POST ${url}" >&2
 echo "pem-push: payload ${payload_file}" >&2

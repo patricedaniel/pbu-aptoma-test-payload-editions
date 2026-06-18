@@ -11,16 +11,10 @@ cp config/pem.env.sample config/pem.env
 # Edit config/pem.env and set APTOM_PEM_API_KEY
 ```
 
-2. **Dry-run** a payload (default — no changes in Aptoma):
+2. **Push** a payload (every successful `POST` applies changes in DrEdition):
 
 ```bash
 ./pem-push.sh payloads/edition-shared-pages.json
-```
-
-3. **Apply** when the dry-run looks good:
-
-```bash
-./pem-push.sh --live payloads/edition-shared-pages.json
 ```
 
 Requires `curl` on macOS (preinstalled). Optional: `jq` for pretty-printed JSON responses.
@@ -31,8 +25,6 @@ Local shell script that `POST`s a JSON file to PEM. **Create and update are the 
 
 | Option | Meaning |
 |--------|---------|
-| `--dry-run` | Validate only (`dryRun=true`, **default**) |
-| `--live` | Apply changes (`dryRun=false`) |
 | `--auto` | Use `/edition` for a JSON object, `/editions` for an array (**default**) |
 | `--edition` | Force `POST /edition` |
 | `--editions` | Force `POST /editions` (page sharing, bulk) |
@@ -49,8 +41,8 @@ Exit code `0` on HTTP 2xx; non-zero on errors (including **409** if another impo
 # Single edition object
 ./pem-push.sh payloads/my-edition.json
 
-# Explicit live run
-./pem-push.sh --live --editions payloads/edition-shared-pages.json
+# Explicit bulk endpoint
+./pem-push.sh --editions payloads/edition-shared-pages.json
 ```
 
 ## Repository layout

@@ -1,0 +1,88 @@
+{
+  "name": "third-party-planner",
+  "productName": "vormagazin",
+  "editionName": "05-26",
+  "editionTitle": "05/26",
+  "publishDate": "2026-05-13",
+  "config": {
+    "adItemSchemaName": "print-ad-item",
+    "pdfItemSchemaName": "print-pdf-item",
+    "allowPageDelete": false,
+    "allowTemplateUpdate": true,
+    "defaultTemplate": "leer"
+  },
+  "pages": [
+    {
+      "id": "page-001",
+      "template": "leer",
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-002",
+      "template": "leer",
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-003",
+      "template": "leer",
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-004",
+      "template": "Doppelseite",
+      "isSpread": true,
+      "properties": {
+        "ressort": "Lebensraum",
+        "sub-ressort": "wiener linien"
+      },
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-005",
+      "template": "Doppelseite",
+      "isSpread": true,
+      "properties": {
+        "ressort": "Lebensraum",
+        "sub-ressort": "wiener linien"
+      },
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-006",
+      "template": "leer",
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-007",
+      "template": "leer",
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-008",
+      "template": "Doppelseite",
+      "isSpread": true,
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-009",
+      "template": "Doppelseite",
+      "isSpread": true,
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-010",
+      "template": "leer",
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-011",
+      "template": "leer",
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    },
+    {
+      "id": "page-012",
+      "template": "leer",
+      "objects": { "ads": [], "pdfs": [], "placeholders": [] }
+    }
+  ]
+}
